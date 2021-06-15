@@ -1,11 +1,11 @@
 {
   "root": true,
-  "api": {
-    "projectId": "0lvl81xl",
-    "dataset": "production"
-  },
   "project": {
-    "name": "slicks-slices"
+    "name": "icon-gallery-content"
+  },
+  "api": {
+    "projectId": "5v079gf3",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
@@ -13,7 +13,7 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "@sanity/google-maps-input"
+    "barcode-input"
   ],
   "env": {
     "development": {
