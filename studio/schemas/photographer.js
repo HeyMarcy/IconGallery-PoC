@@ -22,8 +22,7 @@ export default {
     {
       name: 'image',
       type: 'mainImage',
-      title: 'Event image',
-      description: 'The highest resolution',
+      title: 'Photographer image',
     },
     {
       title: 'Biography',
@@ -33,6 +32,11 @@ export default {
     {
       title: 'No longer with us?',
       name: 'notActive',
+      type: 'boolean',
+    },
+    {
+      name: 'disable',
+      title: 'Disable',
       type: 'boolean',
     },
   ],

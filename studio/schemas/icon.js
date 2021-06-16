@@ -19,12 +19,9 @@ export default {
       type: 'string',
     },
     {
-      title: 'Photograph',
-      name: 'photograph',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'image',
+      title: 'Image',
+      type: 'mainImage',
     },
     {
       name: 'description',
@@ -51,6 +48,30 @@ export default {
       name: 'artists',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'artist' }] }],
+    },
+    {
+      name: 'keywords',
+      type: 'array',
+      title: 'Keywords',
+      description: 'Add keywords.',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
+    },
+    {
+      name: 'sessionType',
+      type: 'string',
+      title: 'Session type',
+      options: {
+        list: [
+          { value: 'keynote', title: 'Keynote' },
+          { value: 'talk', title: 'Talk' },
+          { value: 'break', title: 'Break' },
+          { value: 'firesideChat', title: 'Fireside Chat' },
+          { value: 'panel', title: 'Panel' },
+        ],
+      },
     },
     {
       title: 'Aspect ratio is tall?',

@@ -13,5 +13,16 @@ export default {
       title: 'Image',
       type: 'mainImage',
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      description:
+        'Some frontends will require a slug to be set to be able to show the person',
+      options: {
+        source: 'name',
+        maxLength: 96,
+      },
+    },
   ],
 };
